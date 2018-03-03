@@ -1,0 +1,257 @@
+//META{"name":"LooperFlat","description":"Pro tip: if you load another theme, this one can be acting weird so restart discord if this happends.","author":"AzzyLooper","version":"1.4 [Alpha]"}*//
+
+[class~=guilds-wrapper] [class~=guilds] [class~=guild] {
+    margin-left: .5pc;
+}
+
+[class~=guilds-wrapper] [class~=guilds] [class~=guild] {
+    margin-top: 6pt;
+}
+[class~=guilds-wrapper] [class~=guilds] [class~=guild]:first-child,
+[class~=guilds-wrapper] [class~=guilds] [class~=friends-online] {
+    margin-left: auto;
+}
+.guilds-wrapper .guilds .guild-separator,
+[class~=guilds-wrapper] [class~=guilds] [class~=friends-online] {
+    width: 100%;
+}
+[class~=guilds-wrapper] [class~=guilds] [class~=guild]:first-child {
+    margin-right: auto;
+}
+.guilds-wrapper {
+    -webkit-transition: 200ms;
+    -moz-transition: 200ms;
+    -o-transition: 200ms;
+    -ms-transition: 200ms;
+    transition: 200ms;
+    width: 5px;
+}
+.guilds-wrapper:hover {
+  -webkit-transition: 200ms;
+  -moz-transition: 200ms;
+  -o-transition: 200ms;
+  -ms-transition: 200ms;
+  transition: 200ms;
+  width: 140px;
+}
+[class~=guilds-wrapper] [class~=scroller-wrap] {
+    width: 113pt;
+}
+[class~=guilds-wrapper] [class~=guilds],
+[class~=guilds-wrapper] [class~=guilds] [class~=dms] {
+    display: flex;
+}
+
+[class~=guilds-wrapper] [class~=guilds],
+[class~=guilds-wrapper] [class~=guilds] [class~=dms],
+[class~=guilds-wrapper] [class~=guilds] {
+    flex-flow: row wrap;
+}
+[class~=guilds-wrapper] [class~=guilds],
+[class~=guilds-wrapper] [class~=guilds] {
+    align-content: flex-start;
+}
+div[class^="wrapperHovered"] div[class^="content"] {
+  background-color: #020202;
+}
+*[class^="colorHovered"],
+*[class^="colorSelected"] {
+  color: #000000;
+  opacity: 1;
+}
+.private-channels .search-bar{
+  overflow: hidden;
+  transition: height 0.3s;
+}
+.private-channels:not(:hover) .search-bar {
+  height: 0px;
+  font-size: 0px;
+}
+.channel-members-wrap {
+  height: 100%;
+  margin-left: 100%;
+  position: absolute !important;
+  max-width: 200px;
+  min-width: 200px;
+  right: -180px;
+  transition: 200ms;
+  z-index: 1;
+}
+.channel-members-wrap:hover {
+  right: 28px;
+  transition: 200ms;
+}
+.theme-dark .channel-members .member.popout-open {
+  background: #505050;
+}
+.theme-dark .channel-members .member:hover {
+    background: #020202;
+}
+.theme-dark .friends-table, .theme-dark .messages-wrapper,
+.theme-dark .ui-standard-sidebar-view,
+.container-2OU7Cz,
+.container-RYiLUQ,
+.layers-20RVFW,
+.layer-kosS71,
+.container-2OU7Cz,
+.typing-3eiiL_,
+.layers-20RVFW,
+.theme-dark .layer,
+.theme-dark .layers,
+.guilds-wrapper,
+.theme-dark .chat form .typing,
+.theme-dark .chat form,
+.theme-dark .chat>.content,
+.theme-dark .chat,
+.theme-dark .headerBar-cxbhPD,
+.theme-dark .ui-standard-sidebar-view .content-region,
+.theme-dark .ui-standard-sidebar-view .sidebar-region,
+.theme-dark .ui-standard-sidebar-view,
+.theme-dark .channel-members,
+.theme-dark #friends,
+.theme-dark .title-qAcLxz,
+.theme-dark .typing-3eiiL_,
+.appMount-14L89u {
+    background: #101010;
+}
+.channels-3g2vYe {
+    background: #080808;
+}
+.guilds-wrapper .guilds .guild:hover .guild-inner a,
+.guilds-wrapper .guilds .guild.selected .guild-inner a {
+    height:40px;
+    line-height:40px
+}
+.guilds-wrapper .guilds .guild:not(:hover) .guild-inner a {
+    height:40px;
+    line-height:40px
+}
+.guilds-wrapper .guilds .friends-icon {
+    height:100%
+}
+.guilds-wrapper .guilds {
+    padding:10px 0 10px 6px;
+}
+.guilds-wrapper .guilds .guild.selected:before,
+.guilds-wrapper .guilds .guild.unread:before {
+    left:0;
+    top:0;
+    width:100%;
+    margin-top:0;
+    height:80%;
+    border-radius:0;
+    z-index:-1;
+    margin-top:0;
+}
+.guilds-wrapper .guilds .guild .badge{
+    left:0;
+    right:0;
+    bottom:unset;
+    top:20px;
+    height:21px;
+    padding:0;
+    z-index:-1;
+    text-align:center;
+    vertical-align:;
+    line-height:28px;
+    transition:padding-top .2s;
+}
+.guilds-wrapper .guilds .guild:hover .badge{
+    padding-top:12px;
+    transition:padding-top .2s cubic-bezier(.34,.49,.62,1.48);
+}
+.guilds-error {
+  width: 40px !important;
+  height: 40px !important;
+  line-height: 39px !important;
+}
+.theme-dark .message-group .comment .markup {
+    text-shadow: 0 0 1px red;
+}
+.message-group .avatar-large {
+   width           : 20px !important;
+   height          : 40px !important;
+   border          : 5px solid rgba(1,1,1,1);
+   border-radius   : 0 !important;
+   background-size : cover !important;
+   transition      : all .2s ease !important;
+   opacity         : .5 !important;
+}
+.message-group .avatar-large:hover {
+   width           : 40px !important;
+   opacity         : 1 !important;
+}
+.message-group-blocked {
+    display: none !important;
+}
+.message-group {
+  background-color: black;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.markup pre, .markup code {
+  background-color: var(--color-dark)!important;
+  border-color: var(--color-very-dark)!important;
+}
+#friends, #friends>div {
+  background-color: black;
+}
+* {
+    -moz-animation: none !important;
+    animation: none !important;
+}
+.avatar-small .status {
+width: 30px !important;
+height: 30px !important;
+}
+.channel-members .avatar-small .status {
+right: -2px !important;
+}
+.user-popout .avatar-wrapper .avatar-popout .status {
+width: 98px !important;
+height: 98px !important;
+right: 0 !important;
+bottom: 0 !important;
+border-radius: 100% !important;
+border: 4px solid !important;
+}
+.account .avatar-small .status {
+    bottom: -1px;
+}
+.private-channels .avatar-small .status {
+    right: -2px;
+    bottom: -2px
+}
+.avatar-small .status {
+width: 8px !important;
+height: 8px !important;
+}
+.channel-members .avatar-small .status {
+right: -2px !important;
+}
+.guilds-wrapper .bar-Y-RLyN {
+  overflow: hidden;
+  background: #ff0000;
+}
+.user-popout .avatar-wrapper .avatar-popout .status {
+width: 98px !important;
+height: 98px !important;
+right: 0 !important;
+bottom: 0 !important;
+border-radius: 100% !important;
+border: 4px solid !important;
+}
+.account .avatar-small .status {
+    bottom: -1px;
+}
+.private-channels .avatar-small .status {
+    right: -2px;
+    bottom: -2px
+}
+.bd-blue .tooltip {
+    background-color: red !important;
+}
+.bd-blue .tooltip.tooltip-right:after {
+    border-right-color: red !important;
+}
