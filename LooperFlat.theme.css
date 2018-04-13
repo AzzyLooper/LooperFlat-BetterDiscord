@@ -1,4 +1,3 @@
-//META{"name":"LooperFlat","description":"Patched the chat","author":"AzzyLooper","version":"2. [Alpha]"}*//
 /*Channels list*/
 [class~=guilds-wrapper] [class~=guilds] [class~=guild] {
     margin-top: 6pt;
