@@ -169,6 +169,7 @@ div[class^="wrapperHovered"] div[class^="content"],
 	transition: .2s;
 }
 .membersGroup-3_dP5E {
+	z-index: 6000;
 	color: rgba(150,0,0,1) !important;
 	padding: 10px 100px 10px 100px;
 	background: linear-gradient(to right, #101010 0%, #101010 50%, #401010 100%);
